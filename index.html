@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/estiloindex.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="main.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="css/style.css">   
+    <title>Registro | Bancomax</title>
+</head>
+<body>
+    <div class="jumbotron" id="jumbotroni">
+            <h1 align="center">BANCOMAX</h1>
+            <p align="center">El banco que acompaña tus sueños</p>
+    </div>    
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-3"><img src="img/logo1original (1).jpg" alt="logo" >
+            <i><h4>Al iniciar sesión por primera vez recibe una bonificación de $5000</h4></i></div>
+        <div class="col-md-6">
+            <h2 align="center">INICIO DE SESIÓN</h2> 
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="inputName">Nombre</label>
+                            <input type="text" id="name" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputLastName">Apellido</label>
+                            <input type="text" id="lastName" class="form-control" placeholder="Apellidos" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="numeroCliente">Ingresa tu NIP</label>
+                        <input type="number" class="form-control" placeholder="Ingresa tu NIP" required id="NIP">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Ingresa tu contraseña</label>
+                        <input type="password" id="contraseñaInicio" class="form-control" placeholder="Ingrese tu contraseña contraseña" required>
+                    </div>
+                    <button id="inicio" class="btn btn-danger btn-block" onclick="iniciarSesion()">Ingresar</button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+        <div class="jumbotron" id="jumbotroni">
+            <h2>TEXTO RANDOM</h2>
+            <h2>TEXTO RANDOM</h2>
+            <h2>TEXTO RANDOM</h2>
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

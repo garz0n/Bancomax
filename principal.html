@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/estiloindex.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="css/style.css">   
+    <title>BancoMax</title>
+</head>
+<body class="body">
+    <div class="jumbotron" id="jumbotroni">
+            <h1 align="center">BANCOMAX</h1>
+            <p align="center">El banco que acompaña tus sueños</p>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="#" class="navbar-brand"><img src="img/logo_size.jpg" alt="..." height="100" width="100">BANCOMAX</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+        </div>
+    </nav>
+    <hr id="div1">
+    <marquee behavior="" direction="right"> El banco que acompaña tus sueños</marquee>
+    <hr id="div2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-9"><h2 align="center">¿QUÉ DESEAS HACER?</h2></div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="../Banco/img/logo1original (2).jpg" alt="Brand BANCOMAX" align="center" height="280" width="280"> 
+                <h2 align="center">¿QUIENES SOMOS?</h2>
+                <p align="center">Somos un banco ocupado en impulsar<br>
+                el talento y trabajo mexicano. Estamos consientes<br>
+                de que México tiene el futuro en el trabajo de les <br>
+                mexicanos. Queremos ser un impulso más para salir <br>
+                adelante todas, todos, todes porque somos parte de <br>
+                México.
+                </p>
+                <br>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-warning" style="width: 18rem;" id="card-ingresar">
+                <img src="img/ingresos.png" alt="Ingreso">
+                <div class="card-body">
+                    <h3 class="card-title">INGRESOS</h3>
+                    <p class="card-text">Al hacer clic en este botón podrás ingresar dinero a tu cuenta</p>
+                    <input type="number" id="ingresar" class="form-control" placeholder="Cantidad a ingresar a tu cuenta">
+                    <br>
+                    <button id="btn-ingreso" class="btn btn-danger btn-block" onclick="ingresar()"><img src="img/ingresos (1).png" alt="..." height="25" width="25">INGRESAR DINERO</a></button>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-danger" style="width: 18rem;">
+                <img src="img/transferencia-de-dinero.png" alt="Transfer">
+                <div class="card-body">
+                    <h3 class="card-title">TRANSFERENCIA</h3>
+                    <p class="card-text">Al hacer clic en este botón podrás transferir dinero de tu cuenta</p>
+                    <input type="number" id="transferencia" class="form-control" placeholder="Ingresa la cantidad a transferir">
+                    <label for="text">Ingresa el No. de cuenta al que lo deseas mandar</label>
+                    <input type="number" id="numeroCuenta" class="form-control" placeholder="No. de cuenta">
+                    <br>
+                   <button id="transferencia" type="button" class="btn btn-danger btn-block" onclick="transferir()"><img src="img/ingresos.png" alt="..." height="25" width="25">TRANSFERIR</a></button>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-info" style="width: 18rem;">
+                <img src="img/retirar.png" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">RETIRO</h3>
+                    <p class="card-text">Al hacer clic en este botón podrás retirar dinero de tu cuenta</p>
+                    <input type="number" id="retiro" class="form-control" placeholder="Ingresa la cantidad que deseas retirar">
+                    <br>
+                    <button id="btn-retiro" class="btn btn-danger btn-block" onclick="retirar()"><img src="img/retirada.png" alt="..." height="25" width="25">RETIRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <table class="table">
+                    <thead>
+                        <h2 align="center">Estado de cuenta</h2>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Numero de cliente:</th>
+                            <td id="mostrarNumero">12345678</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Total de saldo:</th>
+                            <td id="mostrarSaldo"><input id="mostrarSaldo" type="number" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tipo de cuenta:</th>
+                            <td>Premium</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>}
+    <div class="container-fluid" id="jumbotroni">
+        <div class="jumbotron" >
+            <h3>TEXTO RANDOM</h3>
+            <h3>TEXTO RANDOM</h3>
+            <h3>TEXTO RANDOM</h3>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>

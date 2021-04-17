@@ -1,0 +1,11 @@
+.body{
+    background: rgb(224, 129, 113);
+/*background: linear-gradient(175deg, rgb(169, 199, 233) 0%, rgb(78, 170, 212) 43%, rgb(96, 115, 226) 100%);*/
+}
+.jumbotron{
+    background:rgb(188,194,200);
+    background: linear-gradient(25deg, rgb(128, 240, 221)2%, rgb(73, 172, 202)55%, rgb(128,240,221)100%)
+}
+#jumbotroni{
+    background:rgb(224,129,113);
+}
